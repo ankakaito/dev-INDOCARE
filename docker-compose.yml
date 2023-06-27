@@ -17,10 +17,10 @@ services:
             - "8082:8069"
         volumes:
             - c14-odoo-data-dev-indocare:/var/lib/odoo
-            - /home/oatmeal/dev-INDOCARE/custom/ee14:/mnt/ins-addons
-            - /home/oatmeal/dev-INDOCARE/backups/ee14:/mnt/odoo-backups
-            - /home/oatmeal/dev-INDOCARE/logs/:/mnt/odoo-logs
-            - /home/oatmeal/dev-INDOCARE/conf/odoo.conf:/etc/odoo/odoo.conf
+            - /home/docker/dev-INDOCARE/custom/ee14:/mnt/ins-addons
+            - /home/docker/dev-INDOCARE/backups/ee14:/mnt/odoo-backups
+            - /home/docker/dev-INDOCARE/logs/:/mnt/odoo-logs
+            - /home/docker/dev-INDOCARE/conf/odoo.conf:/etc/odoo/odoo.conf
 
         container_name: odoo-14-ee-dev-indocare
         restart: always
